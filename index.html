@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a14372ab98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/signimg.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm Vivek Singh</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/LINKEDIN Photo-fotor-bg-remover-2024011513527.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Myself Vivek Singh,prefinal year student at NIT Patna pursuing B.Tech under Computer Science domain.I'm passionate about coding and well equipped with problem-solving skills and have the ability to perform well in a team.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" id="skill_id" onclick="opentab('skill_id','skills')" >Skills </p>
+                        <!-- <p class="tab-links exprce" onclick="opentab('Experience')">Experience </p> -->
+                        <p class="tab-links" id="education_id" onclick="opentab('education_id','education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                            <li><span>Data Structures and Algorithms</span><br>Problem Solver</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech from NIT Patna</li>
+                            <li><span>2019</span><br>Class 12th from IGJ School</li>
+                            <li><span>2017</span><br>Class 10th from St. Fransalian De' Sales School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Design</h2>
+                    <p>I offer one stop solution for your interactive and awesome Frontend Website. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>DSA Problem Solver</h2>
+                    <p>I have good problem-solving skills and have fair knowledge of various Data Structures and Algorithms. </p>
+                    <a href="https://leetcode.com/vivek_singhh/">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/fotor-ai-2024011514942.jpg">
+                    <div class="layer">
+                        <h3>My project 1</h3>
+                        <p>Developed a Weather Application using HTML,CSS and Javascript that gives the real-time temperature,humidity,etc based on the searched city.</p>
+                        <a href="https://github.com/SINGHvivekraj/Weather-App-Project"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/fotor-ai-2024011514948.jpg">
+                    <div class="layer">
+                        <h3>My project 2</h3>
+                        <p>Created a Currency detector IOT project as a team using Arduino Uno and Color Sensor. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+               
+               <!--  <div class="work">
+                    <img src="images/fotor-ai-2024011514054.jpg">
+                    <div class="layer">
+                        <h3>My project 3</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                -->
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>viveks98765@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8787735155</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vivek-singh-52942a24a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/v_singhh_?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.github.com/SINGHvivekraj"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div id="dnld">
+                        <a href="Vivek's Resume.pdf" download >Download CV</a>
+
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="buttn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vivek Singh <img src="./images/signimg.png"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
